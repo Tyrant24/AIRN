@@ -1,0 +1,13 @@
+/* pages/details/details.wxss */
+.allcopy{
+  width: 95vw;
+  margin: 20rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  position: fixed;
+  z-index: 10;
+  background: #4ecad6;
+  color: white;
+  bottom: 40rpx;
+  border-radius: 50rpx;
+}

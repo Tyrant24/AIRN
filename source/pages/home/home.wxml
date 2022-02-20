@@ -1,0 +1,99 @@
+<view class="flex-row  flex-center margin-top-20">
+  <view class="flex-1"></view>
+  <view class="padding-40 flex-row flex-column block  " bindtap="bindaiocr" id="A">
+    <view class="flex-1"></view>
+    <image src="{{uploadpath}}resource/{{res.idcard}}" class="orc-icon"></image>
+    <view class="margin-top-20 txt-primary txt-bold h5">身份识别</view>
+    <view class="flex-1"></view>
+  </view>
+  <view class="flex-1"></view>
+  <view class="padding-40 flex-row flex-column block  " bindtap="bindaiocr" id="B">
+    <view class="flex-1"></view>
+    <image src="{{uploadpath}}resource/{{res.businesscard}}" class="orc-icon"></image>
+    <view class="margin-top-20 txt-primary txt-bold h5">名片识别</view>
+    <view class="flex-1"></view>
+  </view>
+  <view class="flex-1"></view>
+</view>
+
+<view class="flex-row  flex-center">
+  <view class="flex-1"></view>
+  <view class="padding-40 flex-row flex-column block  " bindtap="bindaiocr" id="C">
+    <view class="flex-1"></view>
+    <image src="{{uploadpath}}resource/{{res.driverlicense}}" class="orc-icon"></image>
+    <view class="margin-top-20 txt-primary txt-bold h5">驾驶证识别</view>
+    <view class="flex-1"></view>
+  </view>
+  <view class="flex-1"></view>
+  <view class="padding-40 flex-row flex-column block  " bindtap="bindaiocr" id="D">
+    <view class="flex-1"></view>
+    <image src="{{uploadpath}}resource/{{res.drivingpermit}}" class="orc-icon"></image>
+    <view class="margin-top-20 txt-primary txt-bold h5">行驶证识别</view>
+    <view class="flex-1"></view>
+  </view>
+  <view class="flex-1"></view>
+</view>
+
+<view class="flex-row  flex-center">
+  <view class="flex-1"></view>
+  <view class="padding-40 flex-row flex-column block  " bindtap="bindaiocr" id="E">
+    <view class="flex-1"></view>
+    <image src="{{uploadpath}}resource/{{res.businesslicense}}" class="orc-icon"></image>
+    <view class="margin-top-20 txt-primary txt-bold h5">营业执照识别</view>
+    <view class="flex-1"></view>
+  </view>
+  <view class="flex-1"></view>
+  <view class="padding-40 flex-row flex-column block  " bindtap="bindaiocr" id="F">
+    <view class="flex-1"></view>
+    <image src="{{uploadpath}}resource/{{res.brankcard}}" class="orc-icon"></image>
+    <view class="margin-top-20 txt-primary txt-bold h5">银行卡识别</view>
+    <view class="flex-1"></view>
+  </view>
+  <view class="flex-1"></view>
+</view>
+
+<view class="flex-row  flex-center">
+  <view class="flex-1"></view>
+  <view class="padding-40 flex-row flex-column block  " bindtap="bindaiocr" id="G">
+    <view class="flex-1"></view>
+    <image src="{{uploadpath}}resource/{{res.currency}}" class="orc-icon" ></image>
+    <view class="margin-top-20 txt-primary txt-bold h5">通用识别</view>
+    <view class="flex-1"></view>
+  </view>
+  <view class="flex-1"></view>
+  <view class="padding-40 flex-row flex-column block  " bindtap="bindaiocr" id="H">
+    <view class="flex-1"></view>
+    <image src="{{uploadpath}}resource/{{res.handwriting}}" class="orc-icon" ></image>
+    <view class="margin-top-20 txt-primary txt-bold h5">手写体识别</view>
+    <view class="flex-1"></view>
+  </view>
+  <view class="flex-1"></view>
+</view>
+
+
+<view class="flex-row  flex-center">
+  <view class="flex-1"></view>
+  <view class="padding-40 flex-row flex-column block  " bindtap="bindaiocr" id="I">
+    <view class="flex-1"></view>
+    <image src="{{uploadpath}}resource/{{res.numberplates}}" class="orc-icon"></image>
+    <view class="margin-top-20 txt-primary txt-bold h5">车牌识别</view>
+    <view class="flex-1"></view>
+  </view>
+  
+  <view class="flex-1"></view>
+  <view class="padding-40 flex-row flex-column block  " bindtap="bindtodetail"  >
+    <view class="flex-1"></view>
+    <image src="{{uploadpath}}resource/{{res.barcode}}" class="orc-icon"></image>
+    <view class="margin-top-20 txt-primary txt-bold h5">条形码识别</view>
+    <view class="flex-1"></view>
+  </view>
+  <view class="flex-1"></view>
+</view>
+
+<view class="height-40"></view>
+<view  id="{{instinfo.otherappid}}" bindtap="toother"  class="  txt-primary text-center" style="height:60rpx;line-height:60rpx">关于我们</view>
+<view class="h6 txt-gray text-center" style="height:50rpx;line-height:50rpx">{{instinfo.banquan}}</view>
+<view class="height-40"></view>
+
+
+<image class="icon-50 radius-50 position" bindtap="phoneCall" id="{{instinfo.customerservicemobile}}" src="{{uploadpath}}resource/{{res.kefu}}"></image>

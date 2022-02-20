@@ -1,0 +1,29 @@
+<!--pages/details/details.wxml-->
+
+<view class="margin-20">
+  <view class="" wx:for='{{jsondata.item_list}}' wx:for-index='idx'>
+    <view bindtap="copy" data-text="{{item.item}}：{{item.itemstring}}" id="{{idx}}" class="padding-20 {{show==idx?'bg-green txt-white':''}}">{{item.item}}：{{item.itemstring}}</view>
+  </view>
+</view>
+
+<view wx:if='{{types=="A"}}' class="margin-20">
+  <view class="">
+
+    <view bindtap="copy" data-text="姓名：{{jsondata.name}}" class="padding-20" >姓名：{{jsondata.name}}</view>
+
+    <view bindtap="copy" data-text="性别：{{jsondata.sex}}" class="padding-20 ">性别：{{jsondata.sex}}</view>
+
+    <view bindtap="copy" data-text="民族：{{jsondata.nation}}" class="padding-20" >民族：{{jsondata.nation}}</view>
+
+    <view bindtap="copy" data-text="出生：{{jsondata.birth}}" class="padding-20" >出生：{{jsondata.birth}}</view>
+
+    <view bindtap="copy" data-text="住址：{{jsondata.address}}" class="padding-20" >住址：{{jsondata.address}}</view>
+
+    <view bindtap="copy" data-text="公民身份号码：{{jsondata.id}}" class="padding-20">公民身份号码：{{jsondata.id}}</view>
+
+  </view>
+</view>
+
+<view class="margin-40">{{barcode}}</view>
+ 
+<view class="allcopy h5 text-center" bindtap="allcopy">一键复制</view>
